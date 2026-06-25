@@ -10,9 +10,11 @@
 <meta name="keywords" content="SEO Expert, AI SEO, GEO, Generative Engine Optimization, Google AI Mode, AI Overviews, SGE, Google Ads, Meta Ads, Performance Marketing, SEO Vadodara, SEO Gujarat, Digital Marketing Consultant, Mahi Yadav">
 <meta name="author" content="Mahi Yadav">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="https://mahiyadav.in/">
+<link rel="canonical" href="https://mahiyadav.com/">
 <!-- Open Graph -->
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://mahiyadav.com/">
+<meta property="og:image" content="https://mahiyadav.com/assets/logo.png">
 <meta property="og:title" content="Mahi Yadav — SEO, AI SEO & GEO Expert | 15+ Years">
 <meta property="og:description" content="SEO, AI SEO & GEO expert optimizing brands for Google AI Mode, AI Overviews and traditional search. 15+ years of measurable growth across India.">
 <meta property="og:locale" content="en_IN">
@@ -24,6 +26,62 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json" id="faq-schema"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://mahiyadav.com/#person",
+      "name": "Mahi Yadav",
+      "alternateName": "Mahendra Yadav",
+      "jobTitle": "SEO, AI SEO & GEO Expert",
+      "description": "SEO, AI SEO and GEO (Generative Engine Optimization) consultant with 15+ years of experience helping brands grow through organic search, Google Ads and Meta Ads.",
+      "url": "https://mahiyadav.com/",
+      "image": "https://mahiyadav.com/assets/logo.png",
+      "email": "mailto:contact@mahiyadav.com",
+      "telephone": "+91-7383911900",
+      "knowsAbout": ["SEO","AI SEO","Generative Engine Optimization","Google AI Mode","AI Overviews","Google Ads","Meta Ads","Performance Marketing","Technical SEO","Local SEO"],
+      "address": {"@type":"PostalAddress","addressLocality":"Vadodara","addressRegion":"Gujarat","addressCountry":"IN"},
+      "sameAs": ["https://linkedin.com/in/mahiyadav","https://twitter.com/mahiyadav","https://instagram.com/mahiyadav"]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://mahiyadav.com/#business",
+      "name": "Mahi Yadav — SEO & Digital Marketing",
+      "image": "https://mahiyadav.com/assets/logo.png",
+      "url": "https://mahiyadav.com/",
+      "email": "mailto:contact@mahiyadav.com",
+      "telephone": "+91-7383911900",
+      "priceRange": "₹₹",
+      "founder": {"@id":"https://mahiyadav.com/#person"},
+      "areaServed": ["India","Worldwide"],
+      "address": {"@type":"PostalAddress","addressLocality":"Vadodara","addressRegion":"Gujarat","addressCountry":"IN"},
+      "geo": {"@type":"GeoCoordinates","latitude":22.3072,"longitude":73.1812},
+      "openingHoursSpecification": {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mahiyadav.com/#website",
+      "url": "https://mahiyadav.com/",
+      "name": "Mahi Yadav",
+      "publisher": {"@id":"https://mahiyadav.com/#person"},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {"@type":"EntryPoint","urlTemplate":"https://mahiyadav.com/?s={search_term_string}"},
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://mahiyadav.com/#breadcrumb",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://mahiyadav.com/"}
+      ]
+    }
+  ]
+}
+</script>
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
@@ -80,6 +138,12 @@ body{background:var(--bg);color:var(--txt);font-family:var(--fb);line-height:1.6
 .nav-links{display:flex;gap:28px;list-style:none}
 .nav-links a{color:var(--txt2);font-size:.87rem;font-weight:500;cursor:pointer;transition:color .2s}
 .nav-links a:hover,.nav-links a.on{color:var(--txt)}
+.nav-dd{position:relative}
+.nav-dd-toggle{display:flex;align-items:center;gap:4px}
+.nav-dd-menu{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%) translateY(8px);background:var(--bg3);border:1px solid var(--bdr-h);border-radius:14px;padding:8px;min-width:190px;opacity:0;visibility:hidden;transition:all .25s var(--ease);box-shadow:0 20px 50px rgba(0,0,0,.4);display:flex;flex-direction:column;gap:2px;z-index:101}
+.nav-dd:hover .nav-dd-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.nav-dd-menu a{padding:10px 14px;border-radius:9px;font-size:.85rem;color:var(--txt2);transition:all .15s}
+.nav-dd-menu a:hover{background:var(--surf-h);color:var(--txt)}
 .nav-r{display:flex;align-items:center;gap:10px}
 .ib{width:38px;height:38px;border-radius:10px;border:1px solid var(--bdr);background:var(--surf);color:var(--txt2);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:.95rem;transition:all .2s;flex-shrink:0}
 .ib:hover{background:var(--surf-h);color:var(--txt);border-color:var(--bdr-h)}
@@ -491,12 +555,12 @@ function applyMeta(page) {
 
 // ── DATA ──
 const ALL_SERVICES = [
-{ ico: '🔍', title: 'SEO Growth', tag: 'E-Commerce & Local SEO', cat: 'seo', color: 'blue' },
-{ ico: '📈', title: 'Google Ads', tag: 'Performance-Driven PPC', cat: 'ads', color: 'cyan' },
-{ ico: '📱', title: 'Meta Ads', tag: 'Lead Generation Funnels', cat: 'ads', color: 'purple' },
-{ ico: '💻', title: 'Website Development', tag: 'SEO-Ready & Fast', cat: 'web', color: 'green' },
-{ ico: '🤖', title: 'AI SEO & GEO', tag: 'Google AI Mode & AI Overviews', cat: 'seo', color: 'cyan' },
-{ ico: '🚀', title: 'Performance Marketing', tag: 'Full-Funnel ROI', cat: 'perf', color: 'orange' }];
+{ ico: '🔍', title: 'SEO Growth', tag: 'E-Commerce & Local SEO', cat: 'seo', color: 'blue', url: 'services/seo/' },
+{ ico: '📈', title: 'Google Ads', tag: 'Performance-Driven PPC', cat: 'ads', color: 'cyan', url: 'services/google-ads/' },
+{ ico: '📱', title: 'Meta Ads', tag: 'Lead Generation Funnels', cat: 'ads', color: 'purple', url: 'services/meta-ads/' },
+{ ico: '💻', title: 'Website Development', tag: 'SEO-Ready & Fast', cat: 'web', color: 'green', url: 'services/seo/' },
+{ ico: '🤖', title: 'AI SEO & GEO', tag: 'Google AI Mode & AI Overviews', cat: 'seo', color: 'cyan', url: 'services/ai-seo/' },
+{ ico: '🚀', title: 'Performance Marketing', tag: 'Full-Funnel ROI', cat: 'perf', color: 'orange', url: 'services/geo/' }];
 
 
 const SERVICES_FULL = [
@@ -655,7 +719,21 @@ function Navbar({ page, setPage, theme, toggleTheme }) {
         <div className="nav-in">
           <Logo onClick={() => go('Home')} />
           <ul className="nav-links">
-            {NAV.map((n) => <li key={n}><a className={page === n ? 'on' : ''} onClick={() => go(n)}>{n}</a></li>)}
+            <li><a className={page === 'Home' ? 'on' : ''} onClick={() => go('Home')}>Home</a></li>
+            <li><a className={page === 'About' ? 'on' : ''} onClick={() => go('About')}>About</a></li>
+            <li className="nav-dd">
+              <a className={`nav-dd-toggle${page === 'Services' ? ' on' : ''}`} onClick={() => go('Services')}>Services ▾</a>
+              <div className="nav-dd-menu">
+                <a href="services/seo/">SEO</a>
+                <a href="services/ai-seo/">AI SEO</a>
+                <a href="services/geo/">GEO</a>
+                <a href="services/google-ads/">Google Ads</a>
+                <a href="services/meta-ads/">Meta Ads</a>
+              </div>
+            </li>
+            <li><a className={page === 'Portfolio' ? 'on' : ''} onClick={() => go('Portfolio')}>Portfolio</a></li>
+            <li><a href="blog/">Blog</a></li>
+            <li><a className={page === 'Contact' ? 'on' : ''} onClick={() => go('Contact')}>Contact</a></li>
           </ul>
           <div className="nav-r">
             <button className="ib" onClick={toggleTheme} aria-label="Toggle theme">{theme === 'dark' ? '☀' : '☾'}</button>
@@ -667,9 +745,19 @@ function Navbar({ page, setPage, theme, toggleTheme }) {
         </div>
       </nav>
       <div className={`mob-drawer${mob ? ' open' : ''}`}>
-        {NAV.map((n) => <div key={n} className={`mob-link${page === n ? ' on' : ''}`} onClick={() => go(n)}>{n}</div>)}
-        <div className="mob-cta" style={{ display: 'flex', gap: 10 }}>
-          <button className="btn btn-g" style={{ flex: 1, justifyContent: 'center' }} onClick={() => go('Contact')}>🔥 Growth Plan (Free)</button>
+        <div className="mob-link" onClick={() => go('Home')}>Home</div>
+        <div className="mob-link" onClick={() => go('About')}>About</div>
+        <div className="mob-link" onClick={() => go('Services')}>Services</div>
+        <a className="mob-link" href="services/seo/" style={{ paddingLeft: 16, fontSize: '.92rem' }}>→ SEO</a>
+        <a className="mob-link" href="services/ai-seo/" style={{ paddingLeft: 16, fontSize: '.92rem' }}>→ AI SEO</a>
+        <a className="mob-link" href="services/geo/" style={{ paddingLeft: 16, fontSize: '.92rem' }}>→ GEO</a>
+        <a className="mob-link" href="services/google-ads/" style={{ paddingLeft: 16, fontSize: '.92rem' }}>→ Google Ads</a>
+        <a className="mob-link" href="services/meta-ads/" style={{ paddingLeft: 16, fontSize: '.92rem' }}>→ Meta Ads</a>
+        <div className="mob-link" onClick={() => go('Portfolio')}>Portfolio</div>
+        <a className="mob-link" href="blog/">Blog</a>
+        <div className="mob-link" onClick={() => go('Contact')}>Contact</div>
+        <div className="mob-cta" style={{ display: 'flex', gap: 10, marginTop: 12 }}>
+          <a className="btn btn-g" style={{ flex: 1, justifyContent: 'center' }} href="mailto:contact@mahiyadav.com?subject=Free%20SEO%20Audit%20Request">🔥 Free Audit</a>
           <button className="btn btn-o" onClick={() => go('Contact')}>Hire Me</button>
         </div>
       </div>
@@ -750,21 +838,42 @@ function Footer({ setPage }) {
           <Logo onClick={() => setPage('Home')} footer />
           <p className="ft-tag">A digital-marketing studio of one — blending SEO, AI SEO, GEO and paid media into growth systems that compound. Built for the AI-search era and obsessed with measurable ROI.</p>
           <div style={{ display: 'flex', gap: 8, marginTop: 18, flexWrap: 'wrap' }}>
-            {['LinkedIn', 'Twitter', 'Instagram', 'YouTube'].map((s) =>
-            <button key={s} className="btn btn-o btn-sm">{s}</button>
-            )}
+            <a className="btn btn-o btn-sm" href="https://linkedin.com/in/mahiyadav" target="_blank" rel="noopener">LinkedIn</a>
+            <a className="btn btn-o btn-sm" href="https://twitter.com/mahiyadav" target="_blank" rel="noopener">Twitter</a>
+            <a className="btn btn-o btn-sm" href="https://instagram.com/mahiyadav" target="_blank" rel="noopener">Instagram</a>
+            <a className="btn btn-o btn-sm" href="https://youtube.com/@mahiyadav" target="_blank" rel="noopener">YouTube</a>
           </div>
         </div>
-        {[
-        { h: 'Pages', links: NAV },
-        { h: 'Services', links: ['SEO', 'Google Ads', 'Meta Ads', 'Performance Marketing', 'AI SEO', 'Web Design & Dev'] },
-        { h: 'Contact', links: ['contact@mahiyadav.com', '+91-73839 11900', 'Schedule a Meeting', 'Book a Call'] }].
-        map((col) =>
-        <div className="ft-col" key={col.h}>
-            <h4>{col.h}</h4>
-            <ul>{col.links.map((l) => <li key={l}><a onClick={() => NAV.includes(l) && setPage(l)}>{l}</a></li>)}</ul>
-          </div>
-        )}
+        <div className="ft-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a onClick={() => setPage('Home')}>Home</a></li>
+            <li><a onClick={() => setPage('About')}>About</a></li>
+            <li><a onClick={() => setPage('Services')}>Services</a></li>
+            <li><a onClick={() => setPage('Portfolio')}>Portfolio</a></li>
+            <li><a href="blog/">Blog</a></li>
+            <li><a onClick={() => setPage('Contact')}>Contact</a></li>
+          </ul>
+        </div>
+        <div className="ft-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services/seo/">SEO</a></li>
+            <li><a href="services/ai-seo/">AI SEO</a></li>
+            <li><a href="services/geo/">GEO</a></li>
+            <li><a href="services/google-ads/">Google Ads</a></li>
+            <li><a href="services/meta-ads/">Meta Ads</a></li>
+          </ul>
+        </div>
+        <div className="ft-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@mahiyadav.com">contact@mahiyadav.com</a></li>
+            <li><a href="tel:+917383911900">+91-73839 11900</a></li>
+            <li><a href="https://wa.me/919999999999" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="https://calendar.app.google/" target="_blank" rel="noopener">Schedule a Meeting</a></li>
+          </ul>
+        </div>
       </div>
       <div className="ft-big">MAHI YADAV</div>
       <div className="ft-bot">
@@ -1041,12 +1150,12 @@ function HomePage({ setPage }) {
         <div className="svc-overview">
           {ALL_SERVICES.map((s, i) =>
           <FI key={s.title} d={i * 60}>
-              <div className="svo-card" onClick={() => setPage('Services')}>
+              <a className="svo-card" href={s.url} style={{ display: 'block' }}>
                 <span className="svo-arr">↗</span>
                 <div className="svo-ico">{s.ico}</div>
                 <div className="svo-title">{s.title}</div>
                 <div className="svo-tag">{s.tag}</div>
-              </div>
+              </a>
             </FI>
           )}
         </div>
@@ -1294,7 +1403,9 @@ function ContactPage() {
               )}
               <a href="https://calendar.app.google/" target="_blank" rel="noopener noreferrer" className="btn btn-g btn-pulse" style={{ marginTop: 8, justifyContent: 'center' }}>📅 Schedule a Google Meet</a>
               <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginTop: 4 }}>
-                {['LinkedIn', 'Twitter', 'Instagram'].map((s) => <button key={s} className="btn btn-o btn-sm">{s}</button>)}
+                <a className="btn btn-o btn-sm" href="https://linkedin.com/in/mahiyadav" target="_blank" rel="noopener">LinkedIn</a>
+                <a className="btn btn-o btn-sm" href="https://twitter.com/mahiyadav" target="_blank" rel="noopener">Twitter</a>
+                <a className="btn btn-o btn-sm" href="https://instagram.com/mahiyadav" target="_blank" rel="noopener">Instagram</a>
               </div>
               <div className="card" style={{ padding: 22, marginTop: 8, background: 'linear-gradient(135deg,rgba(59,130,246,.07),rgba(168,85,247,.05))' }}>
                 <div style={{ fontFamily: 'var(--fh)', fontWeight: 700, fontSize: '.95rem', marginBottom: 7 }}>✦ Free AI SEO Audit Included</div>
